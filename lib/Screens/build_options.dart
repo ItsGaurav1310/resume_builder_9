@@ -17,11 +17,11 @@ class _Build_optionsState extends State<Build_options> {
         toolbarHeight: 140,
         title: Column(
           children: [
-            Text("Resume Workspace"),
-            SizedBox(
+            const Text("Resume Workspace"),
+            const SizedBox(
               height: 50,
             ),
-            Text("Build Options"),
+            const Text("Build Options"),
           ],
         ),
         centerTitle: true,
@@ -34,26 +34,26 @@ class _Build_optionsState extends State<Build_options> {
                     Row(
                       children: [
                         Container(
-                            margin: EdgeInsets.all(10),
+                            margin: const EdgeInsets.all(10),
                             height: 50,
                             width: 50,
                             child: Image.asset("${e['icon']}")),
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         Text(
                           e["name"],
-                          style: TextStyle(fontSize: 20),
+                          style: const TextStyle(fontSize: 20),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         IconButton(
                             onPressed: () {
                               Navigator.of(context).pushNamed(e['route_name']);
                             },
-                            icon: Icon(CupertinoIcons.right_chevron))
+                            icon: const Icon(CupertinoIcons.right_chevron))
                       ],
                     ),
-                    Divider(
+                    const Divider(
                       thickness: 2,
                     ),
                   ],
